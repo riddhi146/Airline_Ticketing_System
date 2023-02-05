@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    background: url("f1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.message {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 30%;
+    left: 30px;
+    font-size: 30px;
+}
+
+/* -------------------------------------------------------------------- */
+/* Form box starts here */
+
+.form_box {
+    border: 5px solid transparent;
+    width: 500px;
+    height: 450px;
+    position: relative;
+    float: right;    
+    right: 100px;
+    top: 50px;
+    background: transparent;
+    border-radius: 20px;
+    background-color: black;
+    opacity: 0.6;
+}
+
+/* -------------------------------------------------------------------- */
+/* Heading starts here */
+.form_heading 
+{
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+/* -------------------------------------------------------------------- */
+/* FullName starts here */
+
+.form_fullname {
+    text-align: center;
+    color: white;
+    float: left;
+    padding: 5px;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.form_fullname .form-control {
+    font-size: 12px;
+    color: white;
+    background: transparent;
+    margin-left: 31px;
+    height: 30px;
+    width: 300px;
+}
+
+/* -------------------------------------------------------------------- */
+/* Email starts here */
+
+.form_email {
+    text-align: center;
+    color: white;
+    float: left;
+    padding: 5px;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.form_email .form-control {
+    font-size: 12px;
+    color: white;
+    background: transparent;
+    margin-left: 61px;
+    height: 30px;
+    width: 300px;
+}
+
+/* -------------------------------------------------------------------- */
+/* Phone Number starts here */
+
+.form_phnumber {
+    text-align: center;
+    color: white;
+    float: left;
+    padding: 5px;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.form_phnumber .form-control {
+    font-size: 12px;
+    color: white;
+    background: transparent;
+    margin-left: 32px;
+    height: 30px;
+    width: 300px;
+}
+
+/* -------------------------------------------------------------------- */
+/* Flying from/to starts here */
+.form_from
+{
+    text-align: center;
+    color: white;
+    float: left;
+    padding: 5px;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.form_from .form-control
+{
+    font-size: 12px;
+    color: white;
+    background: transparent;
+    margin-left: 20px;
+    height: 30px;
+    width: 300px;
+}
+
+.form_to
+{
+    text-align: center;
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.form_to .form-control
+{
+    font-size: 12px;
+    color: white;
+    background: transparent;
+    margin-left: 36px;
+    height: 30px;
+    width: 300px;
+}
+
+/* -------------------------------------------------------------------- */
+/* Date starts here */
+.form_depart
+{
+    /* text-align: center; */
+    color: white;
+    float: left;
+    padding: 5px;
+    width: 500px;
+    margin-top: 10px;
+}
+
+.form_depart .date
+{
+    font-size: 12px;
+    color: white;
+    background: transparent;
+    height: 30px;
+    width: 120px;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* Class starts here */
+.form_class
+{
+    text-align: center;
+    color: white;
+    float: left;
+    padding: 5px;
+    width: fit-content;
+    margin-top: 10px;
+    position: absolute;
+    left: 230px;   
+}
+
+.form_class .choose
+{
+    margin-left: 10px;
+    text-align: center;
+    width: 120px;
+    color: white;
+    background: transparent;
+    font-size: 12px;
+    height: 30px;
+    width: 120px;
+}
+
+/* -------------------------------------------------------------------- */
+/* Book starts here */
+
+.form_book
+{
+    text-align: center;
+    color: white;
+    float: right;
+    padding: 5px;
+    width: fit-content;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.form_book .submitbtn
+{
+    color: white;
+    background: transparent;
+    font-size: 30px;
+    height: 50px;
+    width: 200px;
+}
+
+.form_book .submitbtn:hover
+{
+    cursor: pointer;
+    background: transparent;
+    background-color: green;
+    color: black;
+    transition: 0.3s;
+} 

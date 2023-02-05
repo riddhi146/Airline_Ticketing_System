@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.mainbox {
+    border: 5px solid black;
+}
+
+.box2 {
+    border: 3px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.box3 {
+    border: 3px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.eticket {
+    text-align: center;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+}
