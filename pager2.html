@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pager2.css">
+    <link href="{{ url_for('static', filename='pager2.css') }}" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+        <div class="eticket">
+            <h1>E-Ticket</h1>
+        </div>
+        
+        <center>
+            <div class="mainbox">
+        
+                <div class="box2">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td> Full Name </td>
+                                <td> Email </td>
+                                <td> Phone No. </td>
+                                <td> Source </td>
+                                <td> Destination </td>
+                                <td> Date of Departure </td>
+                                <td> Travel Class </td>
+                            </tr>
+                        </thead>
+        
+                        <tbody>
+                            <tr>
+                                <td> <span id="yname">{{ uname }}</span> </td>
+                                <td> <span id="yemail">{{ mail }}</span> </td>
+                                <td> <span id="yphnum">{{ phno }}</span> </td>
+                                <td> <span id="yfrom">{{ fplace }}</span> </td>
+                                <td> <span id="yto">{{ tplace }}</span> </td>
+                                <td> <span id="yddate">{{ depdate }}</span> </td>
+                                <td> <span id="ytravel">{{ cs }}</span> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        
+                <div class="box3">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td> Booking ID </td>
+                                <td> Booking Status </td>
+                                <td> Payment Status </td>
+                            </tr>
+                        </thead>
+        
+                        <tbody>
+                            <tr>
+                                <td> <span id="ybookid">{{ bid }}</span> </td>
+                                <td> Confirmed </td>
+                                <td> Approved </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        
+            </div>
+        </center>
+</body>
+</html>

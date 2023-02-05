@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pager1.css">
+    <link href="{{ url_for('static', filename='pager1.css') }}" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div class="message">
+        <p><b>BOOK YOUR FLIGHT TODAY !</b></p>
+        <p>Domestic as well as International flights</p>
+    </div>
+
+    <div class="form_box">
+    
+        <form id="Booking_form" method="POST">
+    
+            <!-- -------------------------------------------------------------------- -->
+            <!-- Form heading starts here -->
+            <div class="form_heading">
+                Book a flight
+            </div>
+    
+            <!-- -------------------------------------------------------------------- -->
+            <!-- Fullname starts here -->
+            <div class="form_fullname">
+                <label for="fullname">Full Name</label>
+                <input class="form-control" type="text" name="fname" placeholder="Full name">
+            </div>
+
+            <!-- -------------------------------------------------------------------- -->
+            <!-- Email starts here -->
+            <div class="form_email">
+                <label for="email">Email</label>
+                <input class="form-control" type="text" name="email" placeholder="Email">
+            </div>
+
+            <!-- -------------------------------------------------------------------- -->
+            <!-- Phone Number starts here -->
+            <div class="form_phnumber">
+                <label for="phnumber">Phone No.</label>
+                <input class="form-control" type="text" name="phnumber" placeholder="Phone No.">
+            </div>
+    
+            <!-- -------------------------------------------------------------------- -->
+            <!-- Flying from/to starts here -->
+            <div class="form_from">
+                <label for="from">Flying From</label>
+                <input type="text" class="form-control" name="fromPlace" placeholder="City or Airport" id="from" required>
+            </div>
+    
+            <div class="form_to">
+                <label for="to">Flying To<label>
+                        <input type="text" class="form-control" name= "toPlace" placeholder="City or Airport" id="to" required>
+            </div>
+    
+            <!-- -------------------------------------------------------------------- -->
+            <!-- Date starts here -->
+            <div class="form_depart">
+                <label for="ddate">Departure Date</label>
+                <input type="date" class="date" name="ddate" id="ddate" required>
+            </div>
+    
+            <!-- -------------------------------------------------------------------- -->
+            <!-- Class starts here -->
+            <div class="form_class">
+                <label for="travel">Travel Class</label>
+                <select class="choose" id="travel" name="class" required>
+                    <option value='Economy'>Economy Class</option>
+                    <option value="Business Class">Business Class</option>
+                    <option value="First Class">First Class</option>
+                </select>
+            </div>
+    
+            <!-- -------------------------------------------------------------------- -->
+            <!-- Book starts here -->
+            <div class="form_book">
+                <button type="submit" class="submitbtn">Book Now !</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
